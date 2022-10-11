@@ -1,0 +1,11 @@
+nav {
+    height:70px;
+    background-color:var(--primary-color);
+    width:100%;
+    margin-top:65px;
+}
+
+.Nav-Img-Container {
+    text-align:center;
+    margin-top:7px;
+}

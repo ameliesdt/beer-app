@@ -1,0 +1,37 @@
+.Home-Container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.Home-Card {
+    align-items:center;
+    max-width:353px;
+    margin-bottom:50px;
+}
+
+.Home-Btn {
+    height:46px;
+    background-color:var(--primary-color);
+    margin-top:-4px;
+}
+
+.Home-Btn a {
+    color:var(--font-color-white);
+    font-size: 30px;
+    font-weight:700;
+    text-decoration: none;
+    margin-left:16px;
+}
+
+.Txt-Container {
+    height:72px;
+    margin-top:7px;
+}
+
+.Home-Txt {
+    font-size:18px;
+    font-weight:500;
+    line-height:23.74px;
+}
