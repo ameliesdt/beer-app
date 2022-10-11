@@ -15,11 +15,11 @@ const Detail = () => {
         fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.id}`)
           .then((response) => response.json())
           .then((data) => setBeer(data));
-      }, []);
+      }, [params.id]);
     return ( 
         <div className="Detail-Container">
             <div className="Detail-Img-Container">
-                <img src={beer.image_url}/>
+                <img src={beer.image_url} alt="beer"/>
             </div>
             <div className="Detail-Txt-Container">
                 <h1>{beer.name}</h1>
@@ -38,7 +38,7 @@ const Detail = () => {
             </div>
             <div className="Detail-GoBack-Btn">
                 <div className="back-btn-container">
-                    <Link to="/Overview"><img src={Arrow}/></Link>
+                    <Link to="/Overview"><img src={Arrow} alt=""/></Link>
                 </div>
                 <div className="space"></div>
             </div>

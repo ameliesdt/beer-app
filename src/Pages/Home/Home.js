@@ -8,7 +8,7 @@ const Home = () => {
         <main className="Home-Container">        
             <div className="Home-Card">
                 <div className="Img-Container">
-                    <img src={allBeers}/>
+                    <img src={allBeers} alt="beer"/>
                 </div>
                 <div className="Home-Btn">
                      <Link to="/Overview">All Beers</Link>
@@ -20,7 +20,7 @@ const Home = () => {
 
             <div className="Home-Card">
                 <div className="Img-Container">
-                    <img src={randomBeers}/>
+                    <img src={randomBeers} alt="random beer img"/>
                 </div>
                 <div className="Home-Btn">
                      <Link to="/RandomBeer">Random Beer</Link>

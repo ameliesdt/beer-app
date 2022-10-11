@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './RandomBeer.css';
 import Nav from '../../Components/Nav/Nav';
@@ -7,7 +6,6 @@ import Arrow from '../../img/Vector.png';
 
 
 const RandomBeer = () => {
-    let params = useParams();
     
     const [beer, setBeer] = useState({});
 
@@ -19,7 +17,7 @@ const RandomBeer = () => {
     return ( 
         <div className="Detail-Container">
             <div className="Detail-Img-Container">
-                <img src={beer.image_url}/>
+                <img src={beer.image_url} alt=""/>
             </div>
             <div className="Detail-Txt-Container">
                 <h1>{beer.name}</h1>
@@ -38,7 +36,7 @@ const RandomBeer = () => {
             </div>
             <div className="Detail-GoBack-Btn">
                 <div className="back-btn-container">
-                    <Link to="/Overview"><img src={Arrow}/></Link>
+                    <Link to="/Overview"><img src={Arrow} alt=""/></Link>
                 </div>
                 <div className="space"></div>
             </div>

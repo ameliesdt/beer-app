@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Details from '../../Components/Detail/Detail';
 import './Overview.css';
 
 const Overview = (beer) => {
@@ -17,7 +16,7 @@ const Overview = (beer) => {
                 <div key={beer._id} className="OV-Container">
                 <div className="Overview-Container">
                     <div className="Overview-Img-Container">
-                        <img src={beer.image_url}/>
+                        <img src={beer.image_url} alt=""/>
                     </div>
                     <div className="Overview-Txt-Container">
                         <h1>{beer.name}</h1>
